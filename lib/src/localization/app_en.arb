@@ -1,0 +1,6 @@
+{
+  "appTitle": "tune_clash",
+  "@appTitle": {
+    "description": "The title of the application"
+  }
+}
