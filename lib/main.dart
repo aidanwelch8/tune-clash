@@ -1,20 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:tune_clash/src/utils/theme/theme.dart';
 
-import 'src/app.dart';
-import 'src/settings/settings_controller.dart';
-import 'src/settings/settings_service.dart';
+void main() => runApp(const App());
 
-void main() async {
-  // Set up the SettingsController, which will glue user settings to multiple
-  // Flutter Widgets.
-  final settingsController = SettingsController(SettingsService());
+class App extends StatelessWidget {
+  const App({Key? key}) : super(key: key);
 
-  // Load the user's preferred theme while the splash screen is displayed.
-  // This prevents a sudden theme change when the app is first displayed.
-  await settingsController.loadSettings();
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: TAppTheme().lightTheme,
+      darkTheme: TAppTheme().darkTheme,
+      themeMode: ThemeMode.system,
+      home: const AppHome(),
+    );
+  }
+}
 
-  // Run the app and pass in the SettingsController. The app listens to the
-  // SettingsController for changes, then passes it further down to the
-  // SettingsView.
-  runApp(MyApp(settingsController: settingsController));
+class AppHome extends StatelessWidget {
+  const AppHome({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text(".appable/")),
+      body: const Center(child: Text("Home Page"))
+    );
+  }
 }

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "742804854739",
+    "project_id": "tune-clash",
+    "storage_bucket": "tune-clash.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742804854739:android:d4d563baf1d99c13bc0126",
+        "android_client_info": {
+          "package_name": "com.example.tune_clash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742804854739-i5tf3qmsm3gd48roabk66r9cj91g8v1j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuUeH4cT83xeje-AZzf_D6oroIo-B7kyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742804854739-i5tf3qmsm3gd48roabk66r9cj91g8v1j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "742804854739-e7acer9s708mdeeptf60nqkkktqbr5hv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tuneClash"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
